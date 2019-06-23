@@ -22,7 +22,7 @@ def get_notes():
     """ Get all the notes and chords from the midi files """
     notes = []
 
-    for file in glob.glob("Pokemon MIDIs/*.mid"):
+    for file in glob.glob("training_files/*.mid"):
         midi = converter.parse(file)
 
         print("Parsing %s" % file)
@@ -35,9 +35,22 @@ def get_notes():
 
         for element in notes_to_parse:
             if isinstance(element, note.Note):
+                if "10" in file:
+                    print()
+                    print(element.offset)
+                    print(element.duration.type)
+                    print(element.duration.quarterLength)
+                    print(element.name)
                 #notes.append(str(element.pitch))
                 note_name = element.name
                 note_length = element.duration.type
+            elif isinstance(element, note.Rest):
+                if "10" in file:
+                    print()
+                    print(element.offset)
+                    print(element.duration.type)
+                    print(element.duration.quarterLength)
+                    print(element.name)
             elif isinstance(element, chord.Chord):
                 print(file + " has chord. Chords cannot be parsed yet. Returning...")
                 return None
@@ -281,5 +294,6 @@ class GAN():
         plt.close()
 
 if __name__ == '__main__':
-  gan = GAN(rows=100)
-  gan.train(epochs=5000, batch_size=32, sample_interval=1)
+  #gan = GAN(rows=100)
+  #gan.train(epochs=5000, batch_size=32, sample_interval=1)
+  get_notes()
