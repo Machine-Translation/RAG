@@ -55,8 +55,9 @@ def get_prop_level(level):
         return prob_dic
     elif level == 2:
         prob_dic = dict()
-        prob_dic[note_to_int.get((0.5, True))] = 0.1  #eigth rest
-        prob_dic[note_to_int.get((0.5, False))] = 0.4 #eigth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.1  #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.4 #eighth note
+
         prob_dic[note_to_int.get((1.0, True))] = 0.1  #quarter rest
         prob_dic[note_to_int.get((1.0, False))] = 0.2 #quarter note
         prob_dic[note_to_int.get((2.0, True))] = 0.1  #half rest
@@ -64,10 +65,11 @@ def get_prop_level(level):
         return prob_dic
     elif level == 3:
         prob_dic = dict()
-        prob_dic[note_to_int.get((0.25, True))] = 0.05     #sixteenth rest
-        prob_dic[note_to_int.get((0.25, False))] = 0.05    #sixteenth note
-        prob_dic[note_to_int.get((0.5, True))] = 0.15     #eigth rest
-        prob_dic[note_to_int.get((0.5, False))] = 0.3     #eigth note
+        prob_dic[note_to_int.get((0.25, True))] = 0.05    #sixteenth rest
+        prob_dic[note_to_int.get((0.25, False))] = 0.05   #sixteenth note
+
+        prob_dic[note_to_int.get((0.5, True))] = 0.15     #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.3     #eighth note
         prob_dic[note_to_int.get((1.0, True))] = 0.15     #quarter rest
         prob_dic[note_to_int.get((1.0, False))] = 0.2     #quarter note
         prob_dic[note_to_int.get((2.0, True))] = 0.05     #half rest
@@ -75,10 +77,10 @@ def get_prop_level(level):
         return prob_dic
     elif level == 4:
         prob_dic = dict()
-        prob_dic[note_to_int.get((0.25, True))] = 0.2      #sixteenth rest
-        prob_dic[note_to_int.get((0.25, False))] = 0.4     #sixteenth note
-        prob_dic[note_to_int.get((0.5, True))] = 0.1      #eigth rest
-        prob_dic[note_to_int.get((0.5, False))] = 0.15    #eigth note
+        prob_dic[note_to_int.get((0.25, True))] = 0.2     #sixteenth rest
+        prob_dic[note_to_int.get((0.25, False))] = 0.4    #sixteenth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.1      #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.15    #eighth note
         prob_dic[note_to_int.get((1.0, True))] = 0.05     #quarter rest
         prob_dic[note_to_int.get((1.0, False))] = 0.05    #quarter note
         prob_dic[note_to_int.get((2.0, True))] = 0.025    #half rest
@@ -88,8 +90,8 @@ def get_prop_level(level):
         prob_dic = dict()
         prob_dic[note_to_int.get((0.25, True))] = 0.2     #sixteenth rest
         prob_dic[note_to_int.get((0.25, False))] = 0.3    #sixteenth note
-        prob_dic[note_to_int.get((0.5, True))] = 0.1      #eigth rest
-        prob_dic[note_to_int.get((0.5, False))] = 0.2     #eigth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.1      #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.2     #eighth note
         prob_dic[note_to_int.get((1.0, True))] = 0.05     #quarter rest
         prob_dic[note_to_int.get((1.0, False))] = 0.1     #quarter note
         prob_dic[note_to_int.get((2.0, True))] = 0.025    #half rest
@@ -98,15 +100,90 @@ def get_prop_level(level):
     elif level == 6:
         prob_dic = dict()
         prob_dic[note_to_int.get((1.5, True))] = 0.05     #dotted quarter rest
-        prob_dic[note_to_int.get((1.5, False))] = 0.25     #dotted quarter note
-        prob_dic[note_to_int.get((0.25, True))] = 0.05     #sixteenth rest
+        prob_dic[note_to_int.get((1.5, False))] = 0.25    #dotted quarter note
+
+        prob_dic[note_to_int.get((0.25, True))] = 0.05    #sixteenth rest
         prob_dic[note_to_int.get((0.25, False))] = 0.2    #sixteenth note
-        prob_dic[note_to_int.get((0.5, True))] = 0.05      #eigth rest
-        prob_dic[note_to_int.get((0.5, False))] = 0.2    #eigth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.05     #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.2     #eighth note
         prob_dic[note_to_int.get((1.0, True))] = 0.05     #quarter rest
         prob_dic[note_to_int.get((1.0, False))] = 0.1     #quarter note
         prob_dic[note_to_int.get((2.0, True))] = 0.025    #half rest
         prob_dic[note_to_int.get((2.0, False))] = 0.025   #half note
+        return prob_dic
+    elif level == 7:
+        prob_dic = dict()
+        prob_dic[note_to_int.get((0.75, True))] = 0.05    #dotted eighth rest
+        prob_dic[note_to_int.get((0.75, False))] = 0.25   #dotted eighth note
+
+        prob_dic[note_to_int.get((1.5, True))] = 0.075    #dotted quarter rest
+        prob_dic[note_to_int.get((1.5, False))] = 0.1     #dotted quarter note
+        prob_dic[note_to_int.get((0.25, True))] = 0.05    #sixteenth rest
+        prob_dic[note_to_int.get((0.25, False))] = 0.1    #sixteenth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.05     #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.1     #eighth note
+        prob_dic[note_to_int.get((1.0, True))] = 0.05     #quarter rest
+        prob_dic[note_to_int.get((1.0, False))] = 0.1     #quarter note
+        prob_dic[note_to_int.get((2.0, True))] = 0.025    #half rest
+        prob_dic[note_to_int.get((2.0, False))] = 0.05    #half note
+        return prob_dic
+    elif level == 8:
+        prob_dic = dict()
+        prob_dic[note_to_int.get((1/3, True))] = 0.025    #triplet eighth rest
+        prob_dic[note_to_int.get((1/3, False))] = 0.2     #triplet eighth note
+
+        prob_dic[note_to_int.get((0.75, True))] = 0.05    #dotted eighth rest
+        prob_dic[note_to_int.get((0.75, False))] = 0.05   #dotted eighth note
+        prob_dic[note_to_int.get((1.5, True))] = 0.05     #dotted quarter rest
+        prob_dic[note_to_int.get((1.5, False))] = 0.1     #dotted quarter note
+        prob_dic[note_to_int.get((0.25, True))] = 0.05    #sixteenth rest
+        prob_dic[note_to_int.get((0.25, False))] = 0.1    #sixteenth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.05     #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.1     #eighth note
+        prob_dic[note_to_int.get((1.0, True))] = 0.05     #quarter rest
+        prob_dic[note_to_int.get((1.0, False))] = 0.1     #quarter note
+        prob_dic[note_to_int.get((2.0, True))] = 0.025    #half rest
+        prob_dic[note_to_int.get((2.0, False))] = 0.05    #half note
+        return prob_dic
+    elif level == 9:
+        prob_dic = dict()
+        prob_dic[note_to_int.get((1/3, True))] = 0.1      #triplet eighth rest
+        prob_dic[note_to_int.get((1/3, False))] = 0.15    #triplet eighth note
+        prob_dic[note_to_int.get((0.75, True))] = 0.05    #dotted eighth rest
+        prob_dic[note_to_int.get((0.75, False))] = 0.05   #dotted eighth note
+        prob_dic[note_to_int.get((1.5, True))] = 0.05     #dotted quarter rest
+        prob_dic[note_to_int.get((1.5, False))] = 0.05    #dotted quarter note
+        prob_dic[note_to_int.get((0.25, True))] = 0.1     #sixteenth rest
+        prob_dic[note_to_int.get((0.25, False))] = 0.15   #sixteenth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.05     #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.1     #eighth note
+        prob_dic[note_to_int.get((1.0, True))] = 0.05     #quarter rest
+        prob_dic[note_to_int.get((1.0, False))] = 0.05    #quarter note
+        prob_dic[note_to_int.get((2.0, True))] = 0.025    #half rest
+        prob_dic[note_to_int.get((2.0, False))] = 0.025   #half note
+        return prob_dic
+    elif level == 10:
+        prob_dic = dict()
+        prob_dic[note_to_int.get((1/12, True))] = 0.1      #triplet sixteenth rest
+        prob_dic[note_to_int.get((1/12, False))] = 0.1    #triplet sixteenth note
+        prob_dic[note_to_int.get((2/3, True))] = 0.05      #triplet quarter rest
+        prob_dic[note_to_int.get((2/3, False))] = 0.1    #triplet quarter note
+
+
+        prob_dic[note_to_int.get((1/3, True))] = 0.05      #triplet eighth rest
+        prob_dic[note_to_int.get((1/3, False))] = 0.1    #triplet eighth note
+        prob_dic[note_to_int.get((0.75, True))] = 0.025    #dotted eighth rest
+        prob_dic[note_to_int.get((0.75, False))] = 0.025   #dotted eighth note
+        prob_dic[note_to_int.get((1.5, True))] = 0.025     #dotted quarter rest
+        prob_dic[note_to_int.get((1.5, False))] = 0.05    #dotted quarter note
+        prob_dic[note_to_int.get((0.25, True))] = 0.05     #sixteenth rest
+        prob_dic[note_to_int.get((0.25, False))] = 0.1   #sixteenth note
+        prob_dic[note_to_int.get((0.5, True))] = 0.05     #eighth rest
+        prob_dic[note_to_int.get((0.5, False))] = 0.1     #eighth note
+        prob_dic[note_to_int.get((1.0, True))] = 0.025     #quarter rest
+        prob_dic[note_to_int.get((1.0, False))] = 0.025    #quarter note
+        prob_dic[note_to_int.get((2.0, True))] = 0.0125    #half rest
+        prob_dic[note_to_int.get((2.0, False))] = 0.0125   #half note
         return prob_dic
     else:
         raise Exception("Level " + level + " is not a valid level")
@@ -115,17 +192,40 @@ def create_rand_tempo():
     """Create a random tempo between 40 and 130"""
     return np.random.randint(40, high=130)
 
-def create_rand_notes(level):
+def create_rand_notes(level, tempo_time):
     """Create an array of 50 random notes"""
     rand_note_dist = get_prop_level(level)
+    int_to_note = get_note_dic(True)
 
+    # Get all possible notes for the level, and the PDF of probabilites for them to appear.
+    sum = 0.0
     ids = []
     distribution = []
     for id, prob in rand_note_dist.items():
         ids.append(id)
         distribution.append(prob)
+        sum += prob
 
-    return np.random.choice(ids, p=distribution, size=50)
+    print(sum)
+
+    # Using the tempo, we will get enough of these notes to come within +-10 seconds of a
+    # minutes worth of notes.
+    offset = 0.0
+    upper_limit = tempo_time + 10.0
+    lower_limit = tempo_time - 10.0
+    num_notes = 50
+    while offset <= lower_limit or offset >= upper_limit:
+        offset = 0.0
+        rand_notes = np.random.choice(ids, p=distribution, size=num_notes)
+        for n in rand_notes:
+            offset += int_to_note.get(n)[0]
+
+        if offset <= lower_limit:
+            num_notes += 5
+        elif offset >= upper_limit:
+            num_notes -= 5
+
+    return rand_notes
 
 def create_rand_midi(notes, tempo_time, file_name):
     """Create a random music track from midi given a music level"""
@@ -142,6 +242,7 @@ def create_rand_midi(notes, tempo_time, file_name):
         # increase offset each iteration so that notes do not stack
         offset += new_note.duration.quarterLength
 
+    print(offset)
     midi_stream = stream.Stream(output_notes)
     midi_stream.write('midi', fp='{}.mid'.format(file_name))
 
@@ -167,8 +268,8 @@ if __name__ == '__main__':
 
         print()
 
-    level = 6
+    level = 10
     rand_tempo = create_rand_tempo()
-    rand_notes = create_rand_notes(level)
+    rand_notes = create_rand_notes(level, rand_tempo)
     create_rand_midi(rand_notes, rand_tempo, "random_{}".format(level))
     create_text_file(rand_notes, rand_tempo, "random_{}".format(level))
