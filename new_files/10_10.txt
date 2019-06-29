@@ -1,0 +1,1 @@
+50:None	14	None	None	None	14	None	None	24	None	24	20	None	16	None	None	None	None	None	20	None	None	None	24	15	None	15	None	None	20	9	23	None	None	20	11	None	None	None	None	None	10	10	None	12	None	24	19	12	23	None	None	None	None	None	23	16	23	None	None	None	None	None	12	None	None	None	0
