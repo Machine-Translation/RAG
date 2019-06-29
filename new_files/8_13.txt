@@ -1,0 +1,1 @@
+82:15	20	11	10	20	None	None	None	None	None	20	24	23	20	19	24	24	None	19	14	20	24	None	None	24	None	None	14	14	None	16	12	10	24	16	20	11	None	None	14	14	None	14	14	12	10	12	16	None	None	12	None	14	12	None	12	12	None	24	13	None	None	10	13	14	None	None	24	24	15	20	16	None	24	10	24	None	None	12	12	12	20	None	None	14	14	11	None	20	13	23	12	9	14	0

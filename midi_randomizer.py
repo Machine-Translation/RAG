@@ -367,6 +367,6 @@ def convert_midi_to_text(dir):
 if __name__ == '__main__':
     #print_notes()
     #create_example(10)
-    #create_output_files(1, 15)
+    #create_output_files(10, 15)
     #convert_text_to_midi(".")
     convert_midi_to_text(".")
